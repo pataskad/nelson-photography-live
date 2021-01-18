@@ -1,0 +1,8 @@
+/*! Make changes here to change css styling applied over boostrap css
+*/
+h1 {
+    text-align: center;
+}
+body {
+    background-color: gainsboro;
+}
