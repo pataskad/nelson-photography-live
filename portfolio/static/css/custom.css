@@ -5,5 +5,11 @@ h1 {
 }
 body {
     text-align: center;
-    background-color: gainsboro;
+    background-color: #FAE8FA;
+}
+.container-fluid {
+    display: inline-block;
+}
+.card {
+    display: inline-block;
 }
