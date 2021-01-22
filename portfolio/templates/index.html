@@ -11,9 +11,45 @@
     <title>Nelson Photography</title>
   </head>
   <body>
+    <nav class="navbar navbar-expand-xl navbar-light bg-secondary">
+      <a class="navbar-brand" href="#"><img class="img-thumbnail" alt="headshot" src="{% static '' %}" style="width: 100%;"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="mx-auto">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Contact Me</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="%">Reviews & Testimonials</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Pricing</a>
+              </li>
+          </ul>
+          </div>
+      </div>
+    </nav>
 
-    <h1>Photo's by Jade</h1>
+    <div id="primary" class="text-center">
+      <img class="img-thumbnail" style="background-image: -o-linear-gradient(red);" rc="{% static 'img/primary.jpg' %}" alt="headshot">
+      <div class="centered">Nelson Photography</div>
+    </div>
 
+    <div class="text-center">
+        
+    </div>
+
+    <footer class="text-center">
+      <h3>Connect with me</h3>
+      <img src="https://img.icons8.com/color/48/000000/twitter-squared.png"/>
+      <img src="https://img.icons8.com/nolan/48/facebook.png"/>
+      <img src="https://img.icons8.com/fluent/48/000000/gmail--v1.png"/>
+      <br><a href="https://icons8.com/icons/set/popular">All icons provided by Icons8</a>
+      <p>Copyright 2021</p>
+    </footer>
 
   </body>
 </html>
