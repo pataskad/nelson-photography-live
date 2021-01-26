@@ -13,3 +13,6 @@ body {
 .card {
     display: inline-block;
 }
+#reviews {
+    background-color: gainsboro;
+}
