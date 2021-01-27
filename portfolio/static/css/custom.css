@@ -3,16 +3,9 @@
 h1 {
     text-align: center;
 }
-body {
-    text-align: center;
-    background-color: #FAE8FA;
-}
 .container-fluid {
     display: inline-block;
 }
 .card {
     display: inline-block;
-}
-#reviews {
-    background-color: gainsboro;
 }

@@ -8,50 +8,45 @@
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/custom.css' %}">
 
-    <title>Nelson Photography</title>
+    <title>Pix by Jade</title>
   </head>
-  <body>
+  <body style="text-align: center; background-image: linear-gradient(to right, #d4bad8, #bc6eca);">
 
     <!--NAVIGATION BAR, NAV LINKS AND COMPANY LOGO/TITLE-->
-    <nav class="navbar navbar-expand-xl navbar-light bg-secondary">
-      <a class="navbar-brand" href="#"><p class="font-">Nelson Photography</p></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="mx-auto">
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-              <li class="nav-item">
-                  <a class="nav-link" href="#">What I Do</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#">Reviews & Testimonials</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#">Contact Me</a>
-              </li>
-          </ul>
-          </div>
-      </div>
-    </nav>
+
+      <nav class="navbar navbar-expand-xl" style="background-image: linear-gradient(to right, rgb(231, 231, 238), #d9d8da); height: 200px;">  <!--large height used to compensate for mobile responsiveness-->
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">What I Do</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Reviews & Testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact Me</a>
+          </li>
+        </ul>
+        
+      </nav>
+
+    
 
 
     <!--BEGIN CONTENT-->
     <div id="primary" class="text-center">
-      <img class="img-thumbnail" style="background-image: -o-linear-gradient(red);" rc="{% static 'img/primary.jpg' %}" alt="headshot">
-      <div class="centered">Nelson Photography</div>
+      <div class="centered">Pix by Jade: Transform your online image today!</div>
     </div>
 
     <!--SERVICES AND AGENT CAPABILITIES-->
     <div class="container-fluid">
-      <i><h2 style="margin-bottom: 30px;">What I Do</h2></i>
+      <i><h2 style="margin-bottom: 30px; margin-top: 60px; color: #3F3F3F;">What I Do</h2></i>
 
       <div class="card-deck">
         <div class="card shadow-sm p-3 mb-5 bg-white rounded">
           <img class="card-img-top" src="{% static 'img/pexels-photomix-company-212372.jpg' %}" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Custom Photo Shoot Locations</h5>
-            <p class="card-text">No matter what the occasion is we can personalize the one hour session in a variety of ways to enhance the environment surrounding your pictures. I am committed to helping you fall in love with yourself!</p>
+            <p class="card-text" style="text-align: left;">No matter what the occasion is we can personalize the one hour session in a variety of ways to enhance the environment surrounding your pictures. I am committed to helping you fall in love with yourself!</p>
             <button class="btn btn-outline-primary" type="submit">Book a Session</button>
           </div>
         </div>
@@ -59,7 +54,7 @@
           <img class="card-img-top" src="{% static 'img/pexels-caio-56759.jpg' %}" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Photo Editing</h5>
-            <p class="card-text">Looking for a small change or like a specific filter?  Not to worry as I can provide you with a range of options that can add the extra touch you might be looking for to really make that picture have a lasting impact.</p>
+            <p class="card-text" style="text-align: left;">Looking for a small change or like a specific filter?  Not to worry as I can provide you with a range of options that can add the extra touch you might be looking for to really make that picture have a lasting impact.</p>
             <button class="btn btn-outline-primary" type="submit">Book a Session</button>
           </div>
         </div>
@@ -67,7 +62,7 @@
           <img class="card-img-top" src="{% static 'img/pexels-vitaly-vlasov-1655817.jpg' %}" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Professional Equipment</h5>
-            <p class="card-text">In order to guarantee the best pictures for you and yours, I utilize professional camera equipment and editing software to ensure your photos receive optimal care.</p>
+            <p class="card-text" style="text-align: left;">In order to guarantee the best pictures for you and yours, I utilize professional camera equipment and editing software to ensure your photos receive optimal care and satisfaction.</p>
             <button class="btn btn-outline-primary" type="submit">Book a Session</button>
 
           </div>
@@ -76,37 +71,40 @@
     </div>
 
     <!--REVIEWS AND TESTIMONIAL SECTION-->
-    <div class="container-fluid" id="reviews">
-      <i><h2 style="margin-bottom: 50px;">Hear From Past Customers!</h2></i>
 
-      <div class="card-deck">
-        <div class="card" style="width: 18rem; background-color: #FAE8FA;">
+    <div class="container-fluid" id="reviews" style="background-image: linear-gradient(to right, rgb(231, 231, 238), #d9d8da);">
+      <i><h2 style="margin-bottom: 30px; margin-top: 30px; color: #3F3F3F;">Hear From Past Customers!</h2></i>
+
+      <div class="card-deck"  style="margin-bottom: 30px;">
+        <div class="card" style="width: 18rem;background-image: linear-gradient(to right, #d4bad8, #bc6eca);">
           <div class="card-body">
-            <h5 class="card-title" style="text-align: left;">Dallas P.</h5>
+            <h5 class="card-title" style="text-align: left; color: #3F3F3F;">Dallas P.</h5>
             <p class="card-text"><i>Right from the start I felt like I was in good hands having Jade take my first pictures in quite a while.  I am beyond happy with how they turned out!</i></p>
             <h6 class="card-subtitle mb-2 text-muted" style="text-align: right;"><i>- July 2020</i></h6>
           </div>
         </div>
 
-        <div class="card" style="width: 18rem;  background-color: #FAE8FA;">
+        <div class="card" style="width: 18rem;background-image: linear-gradient(to right, #d4bad8, #bc6eca);">
           <div class="card-body">
-            <h5 class="card-title" style="text-align: left;">David K.</h5>
+            <h5 class="card-title" style="text-align: left; color: #3F3F3F;">David K.</h5>
             <p class="card-text"><i>I was unsure of how these were going to turn out, but Jade's input put them over the top for me, well done!</i></p>
             <h6 class="card-subtitle mb-2 text-muted" style="text-align: right;"><i>- October 2020</i></h6>
           </div>
         </div>
 
-        <div class="card" style="width: 18rem;  background-color: #FAE8FA;">
+        <div class="card" style="width: 18rem;background-image: linear-gradient(to right, #d4bad8, #bc6eca);">
           <div class="card-body">
-            <h5 class="card-title"  style="text-align: left;">Candice S.</h5>
+            <h5 class="card-title"  style="text-align: left; color: #3F3F3F;">Candice S.</h5>
             <p class="card-text"><i>Our couple photos turned out amazing.  Thank you Jade for your location suggestions, they make a beautiful background!</i></p>
             <h6 class="card-subtitle mb-2 text-muted" style="text-align: right;"><i>- January 2021</i></h6>
           </div>
         </div>
       </div>
-
-
     </div>
+
+    <!--PREVIOUS WORK COLLECTION-->
+
+
 
     <!--FOOTER, CONTACT, CREATOR AND ACCREDITION LINKS-->
 
