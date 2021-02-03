@@ -9,22 +9,24 @@
     <link rel="stylesheet" href="{% static 'css/custom.css' %}">
 
     <title>Pix by Jade</title>
+    <link rel="icon" type="image/jpg" href="{% static 'img/primary.jpg' %}"/>
   </head>
   <body style="text-align: center; background-image: linear-gradient(to right, #F5F9FC, #EFF2F4);">
 
     <!--NAVIGATION BAR, NAV LINKS AND COMPANY LOGO/TITLE-->
-    <nav class="navbar navbar-expand-xl" style="height: 150px; justify-content: center; background-color: #B588DA; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #6105AB;">  <!--large height used to compensate for mobile responsiveness-->
-      <a class="navbar-brand" href="#">
-        <img src="{% static 'img/primary.jpg' %}" width="100" height="100" alt="primary">
+    <nav class="navbar navbar-expand-xl" style="height: 150px; justify-content: center; background-color: #8b006c; border-bottom-style: solid; border-bottom-width: 1px;">  <!--large height used to compensate for mobile responsiveness-->
+      <a class="navbar-brand" style="margin: 0px;" href="#">
+        <img class="rounded-circle" src="{% static 'img/primary.jpg' %}" width="125" height="125" alt="primary">
       </a>
     </nav>
 
-      <nav class="nav nav-pills flex-column flex-sm-row" style=" width: 100%; background-color: #B588DA; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #6105AB;">
-        <a class="flex-sm-fill text-sm-center nav-link" href="#">What I do</a>
-        <a class="flex-sm-fill text-sm-center nav-link" href="#">Reviews & Testimonials</a>
-        <a class="flex-sm-fill text-sm-center nav-link" href="#">Portfolio</a>
-        <a class="flex-sm-fill text-sm-center nav-link" href="#">Contact Me</a>
-      </nav>
+
+    <nav class="navbar sticky-top nav-pills flex-column shadow-lg flex-sm-row" style="width: 100%; background-color: #8b006c; border-bottom-style: solid; border-bottom-width: 3px;">
+      <a  class="flex-sm-fill text-sm-center nav-link"  style="color: ghostwhite;" href="#">What I do</a>
+      <a  class="flex-sm-fill text-sm-center nav-link"  style="color: ghostwhite;" href="#">Reviews & Testimonials</a>
+      <a  class="flex-sm-fill text-sm-center nav-link"  style="color: ghostwhite;" href="#">Portfolio</a>
+      <a  class="flex-sm-fill text-sm-center nav-link"  style="color: ghostwhite;" href="#">Contact Me</a>
+    </nav>
 
 
 
@@ -40,12 +42,12 @@
       <div class="card-deck">
         <div class="card shadow-sm p-3 mb-5  rounded" style="background:rgba(236, 236, 236, 0.685);">
           <img class="card-img-top" src="{% static 'img/pexels-photomix-company-212372.jpg' %}" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Custom Photo Shoot Locations</h5>
-            <p class="card-text" style="text-align: left;">No matter what the occasion is we can personalize the one hour session in a variety of ways to enhance the environment surrounding your pictures. I am committed to helping you fall in love with yourself!</p>
-            <button class="btn btn-outline-primary" type="submit">Book a Session</button>
-          </div>
-        </div>
+            <div class="card-body">
+              <h5 class="card-title">Custom Photo Shoot Locations</h5>
+              <p class="card-text" style="text-align: left;">No matter what the occasion is we can personalize the one hour session in a variety of ways to enhance the environment surrounding your pictures. I am committed to helping you fall in love with yourself!</p>
+              <button class="btn btn-outline-primary" type="submit">Book a Session</button>
+            </div> 
+        </div>  
         <div class="card shadow-sm p-3 mb-5 rounded" style="background:rgba(236, 236, 236, 0.685);">
           <img class="card-img-top" src="{% static 'img/pexels-caio-56759.jpg' %}" alt="Card image cap">
           <div class="card-body">
@@ -60,10 +62,12 @@
             <h5 class="card-title">Professional Equipment</h5>
             <p class="card-text" style="text-align: left;">In order to guarantee the best pictures for you and yours, I utilize professional camera equipment and editing software to ensure your photos receive optimal care and satisfaction.</p>
             <button class="btn btn-outline-primary" type="submit">Book a Session</button>
-
           </div>
         </div>
       </div>
+
+
+
     </div>
 
     <!--REVIEWS AND TESTIMONIAL SECTION-->
@@ -72,7 +76,7 @@
       <i><h2 style="margin-bottom: 45px; margin-top: 15px; color: #3F3F3F;">Hear From Past Clients!</h2></i>
 
       <div class="card-deck"  style="margin-bottom: 30px;">
-        <div class="card" style="width: 18rem;background-image: linear-gradient(to right, #d4bad8, #bc6eca);">
+        <div class="card" style="width: 16rem; background-image: linear-gradient(to right, #d4bad8, #8b006dc4, #d4bad8);">
           <div class="card-body">
             <h5 class="card-title" style="text-align: left; color: #3F3F3F;">Dallas P.</h5>
             <p class="card-text"><i>Right from the start I felt like I was in good hands having Jade take my first pictures in quite a while.  I am beyond happy with how they turned out!</i></p>
@@ -80,7 +84,7 @@
           </div>
         </div>
 
-        <div class="card" style="width: 18rem;background-image: linear-gradient(to right, #d4bad8, #bc6eca);">
+        <div class="card" style="width: 16rem;background-image: linear-gradient(to right, #d4bad8, #8b006dc4, #d4bad8);">
           <div class="card-body">
             <h5 class="card-title" style="text-align: left; color: #3F3F3F;">David K.</h5>
             <p class="card-text"><i>I was unsure of how these were going to turn out, but Jade's input put them over the top for me, well done!</i></p>
@@ -88,7 +92,7 @@
           </div>
         </div>
 
-        <div class="card" style="width: 18rem;background-image: linear-gradient(to right, #d4bad8, #bc6eca);">
+        <div class="card" style="width: 16rem;background-image: linear-gradient(to right, #d4bad8, #8b006dc4, #d4bad8);">
           <div class="card-body">
             <h5 class="card-title"  style="text-align: left; color: #3F3F3F;">Candice S.</h5>
             <p class="card-text"><i>Our couple photos turned out amazing.  Thank you Jade for your location suggestions, they make a beautiful background!</i></p>
@@ -117,6 +121,19 @@
       <br><a href="https://icons8.com/icons/set/popular">All icons provided by Icons8</a>
       <p>Created by - Dallas Pataska - <a href="https://www.linkedin.com/in/dallas-pataska/">LinkedIn</a></p>
     </footer>
+
+    <!--SCRIPTS-->
+
+    <script>
+      $(document).ready(function(){
+        $('.flex-sm-fill text-sm-center nav-link').hover(function(){
+          $('.flex-sm-fill text-sm-center nav-link').css('background','ghostwhite');
+          },
+        function(){
+          $(".flex-sm-fill text-sm-center nav-link").css('background',' #8b006c');
+        });
+      });
+    </script>
 
   </body>
 </html>
