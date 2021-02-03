@@ -11,8 +11,8 @@ This project is a photography portfolio with a simple starting single page start
 - CSS/JS via Bootstrap
 - Responsive Design heavily focused on combining desktop and mobile accessibility to lower the barrier to entry/viewing the website
 - Python/Django backend
-- Basic SEO implementions including use of Meta tags/description, header tags and favicon
-  - Likely to go further later on in the project lifecycle (Such as blog, etc)
+- Basic SEO implementations including use of Meta tags/description, header tags and favicon
+  - Likely to go further later on in the project lifecycle (Such as blog updates, etc)
 
 
 *** Features Implemented ***
