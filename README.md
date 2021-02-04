@@ -1,6 +1,6 @@
  ---------------- pixbyjade.com ----------------
 
-*** Updated 02/03/21 ***
+*** Updated 02/04/21 ***
 
 *I am currently working towards a February 2021 deployment with updates periodically afterwards as I expand my capabilities as a developer.  I am always open to constructive criticism and to learning to concepts! 
 
@@ -22,6 +22,7 @@ This project is a photography portfolio with a simple starting single page start
 - Effective use of color scheming and correct contrast selections to draw attention to the important Call to Actions (Book now, see portfolio, etc).
 - Careful use of small implementations such as shadows and slight text color changes for additional SEO and design layout improvements (Polishing the fresh paint....)
 - Raw testimonial section currently hard-coded (**Good potential for additions here, such as upload form for reviews for former clients to access**)
+- Portfolio/Gallery for prior work (photo collection), this will be starting out as a simple grid layout with styling making things look better in the short term, but --> *** this is another area I am targeting to rapidly update post-deployment as I find the time ***
 
 *** Upcoming goals ***
 - Image gallery containing prior work/images
