@@ -11,7 +11,7 @@
     <title>Pix by Jade</title>
     <link rel="icon" type="image/jpg" href="{% static 'img/primary.jpg' %}"/>
   </head>
-  <body style="text-align: center; background-image: linear-gradient(to right, #F5F9FC, #EFF2F4);">
+  <body style="text-align: center; line-height: 1.25; background-image: linear-gradient(to right, #F5F9FC, #EFF2F4);">
 
     <!--NAVIGATION BAR, NAV LINKS AND COMPANY LOGO/TITLE-->
     <nav class="navbar navbar-expand-xl" style="height: 150px; justify-content: center; background-color: #8b006c; border-bottom-style: solid; border-bottom-width: 1px;">  <!--large height used to compensate for mobile responsiveness-->
@@ -103,10 +103,35 @@
     </div>
 
     <!--Portfolio WORK COLLECTION-->
-    <div class="container-fluid" id="portfolio" style="background-image: linear-gradient(to right, rgb(231, 231, 238), #d9d8da);">
+    <div class="container-fluid" id="portfolio" style="padding: 0px; background-image: linear-gradient(to right, rgb(231, 231, 238), #d9d8da);">
       <i><h2 style="margin-bottom: 45px; margin-top: 15px; color: #3F3F3F;">Portfolio | Past Work</h2></i>
     </div>
 
+    <div class="container-fluid shadow-lg" style="width: 100%; background-color: #8b006d">
+      <div class="row" style="margin-bottom: 15px; margin-top: 15px;">
+        <div class="col-sm" style="padding: 0px;">
+          <img style="align-items: center;" src="{% static 'img/portfolio-1.jpg' %}" alt="Deer" width="300" height="300">
+        </div>
+        <div class="col-sm" style="padding: 0px;">
+          <img src="{% static 'img/portfolio-2.jpg' %}" alt="Fire" width="300" height="300">
+        </div>
+        <div class="col-sm" style="padding: 0px;">
+          <img src="{% static 'img/portfolio-3.jpg' %}" alt="Deer-2" width="300" height="300">
+        </div>
+      </div>
+      <div class="row" style="margin-bottom: 15px;">
+        <div class="col-sm" style="padding: 0px;">
+          <img style="align-items: center;" src="{% static 'img/portfolio-4.jpg' %}" alt="Deer" width="300" height="300">
+        </div>
+        <div class="col-sm" style="padding: 0px;">
+          <img src="{% static 'img/portfolio-5.jpg' %}" alt="Fire" width="300" height="300">
+        </div>
+        <div class="col-sm" style="padding: 0px;">
+          <img src="{% static 'img/portfolio-6.jpg' %}" alt="Deer-2" width="300" height="300">
+        </div>
+      </div>
+    </div>
+      
 
     <!--FOOTER, CONTACT, CREATOR AND ACCREDITION LINKS-->
 
@@ -125,14 +150,6 @@
     <!--SCRIPTS-->
 
     <script>
-      $(document).ready(function(){
-        $('.flex-sm-fill text-sm-center nav-link').hover(function(){
-          $('.flex-sm-fill text-sm-center nav-link').css('background','ghostwhite');
-          },
-        function(){
-          $(".flex-sm-fill text-sm-center nav-link").css('background',' #8b006c');
-        });
-      });
     </script>
 
   </body>
