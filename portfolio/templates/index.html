@@ -36,8 +36,8 @@
     </div>
 
     <!--SERVICES AND AGENT CAPABILITIES-->
-    <div class="container-fluid"style="background-image: linear-gradient(to right, rgb(231, 231, 238), #d9d8da);">
-      <i><h2 style="margin-bottom: 30px; margin-top: 60px; color: #3F3F3F;">What I Do</h2></i>
+    <div class="container-fluid"style="background-image: linear-gradient(to right, rgb(231, 231, 238), #d9d8da); padding-top: 50px;">
+      <i><h2 style="margin-bottom: 30px; color: #3F3F3F;">What I Do</h2></i>
 
       <div class="card-deck">
         <div class="card shadow-sm p-3 mb-5  rounded" style="background:rgba(236, 236, 236, 0.685);">
@@ -72,7 +72,7 @@
 
     <!--REVIEWS AND TESTIMONIAL SECTION-->
 
-    <div class="container-fluid" id="reviews" style="background-image: linear-gradient(to right, rgb(231, 231, 238), #d9d8da);">
+    <div class="container-fluid" id="reviews" style="background-image: linear-gradient(to right, rgb(231, 231, 238), #d9d8da); padding-top: 50px;">
       <i><h2 style="margin-bottom: 45px; margin-top: 15px; color: #3F3F3F;">Hear From Past Clients!</h2></i>
 
       <div class="card-deck"  style="margin-bottom: 30px;">
@@ -103,11 +103,11 @@
     </div>
 
     <!--Portfolio WORK COLLECTION-->
-    <div class="container-fluid" id="portfolio" style="padding: 0px; background-image: linear-gradient(to right, rgb(231, 231, 238), #d9d8da);">
+    <div class="container-fluid" id="portfolio" style="padding: 0px; background-image: linear-gradient(to right, rgb(231, 231, 238), #d9d8da); padding-top: 50px;">
       <i><h2 style="margin-bottom: 45px; margin-top: 15px; color: #3F3F3F;">Portfolio | Past Work</h2></i>
     </div>
 
-    <div class="container-fluid shadow-lg" style="width: 100%; background-color: #8b006d; border-bottom-style: solid; border-top-style: solid; border-bottom-width: 3px;">
+    <div class="container-fluid shadow-lg" style="width: 100%; padding-top: 40px; padding-bottom: 40px; background-color: #8b006d; border-bottom-style: solid; border-top-style: solid; border-bottom-width: 3px;">
       <div class="row" style="margin-bottom: 15px; margin-top: 15px;">
         <div class="col-sm" style="padding: 0px; margin-bottom: 5px;">
           <img class="rounded shadow-lg" src="{% static 'img/portfolio-1.jpg' %}" alt="Deer" width="300" height="300">
@@ -134,6 +134,59 @@
     </div>
       
 
+    <!--GET IN CONTACT WITH ME ---- BOOK A SESSION-->
+    <div class="container-fluid" id="portfolio" style="padding-top: 50px;">
+      <i><h2 style="margin-bottom: 30px; margin-top: 15px; color: #3F3F3F;">Interested? Fill out the form below for more info!</h2></i>
+    </div>
+
+    <div class="container-fluid" style="text-align: center; padding-bottom: 40px; padding-top: 30px;">
+      <form class="needs-validation" style="text-align: -webkit-center;" novalidate>
+        <div class="form-group" style="margin: 0px; padding-left: 0px; padding-right: 0px;">
+          <div class="col-md-4 mb-3">
+            <label for="validationCustom01">First name:</label>
+            <input type="text" class="form-control" style="width: 50%;" id="validationCustom01" placeholder="First name"required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="validationCustom02">Last name:</label>
+            <input type="text" class="form-control" style="width: 50%;" id="validationCustom02" placeholder="Last name"required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="validationCustom03">Email address:</label>
+            <input type="text" class="form-control" style="width: 75%;" id="validationCustom03" placeholder="Email"required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="validationCustom04">Please include a short description of the service you are interested in:</label>
+            <textarea type="text" rows="8" cols="75" class="form-control" id="validationCustom04" placeholder="#"required></textarea>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label" for="invalidCheck" style="font-size: 12px;">
+              I understand and acknowledge that it may take 24-48 hours to receive a response to my message
+            </label>
+            <div class="invalid-feedback">
+              You must agree before submitting.
+            </div>
+          </div>
+        </div>
+        <button class="btn btn-primary" type="submit">Submit</button>
+      </form>
+    </div>
+    
+
     <!--FOOTER, CONTACT, CREATOR AND ACCREDITION LINKS-->
       <footer class="text-center" style="background-image: linear-gradient(to right, rgb(231, 231, 238), #d9d8da);">
         <h3 style="margin-bottom: 15px; padding-top: 50px;">Connect with me</h3>
@@ -149,7 +202,25 @@
     <!--SCRIPTS-->
 
     <script>
-    </script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+      </script>
 
   </body>
 </html>
