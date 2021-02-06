@@ -1,6 +1,6 @@
  ---------------- pixbyjade.com ----------------
 
-*** Updated 02/04/21 ***
+*** Updated 02/06/21 ***
 
 *I am currently working towards a February 2021 deployment with updates periodically afterwards as I expand my capabilities as a developer.  I am always open to constructive criticism and to learning to concepts! 
 
@@ -16,17 +16,25 @@ This project is a photography portfolio with a simple starting single page start
 
 
 *** Features Implemented ***
-- Single page design for ease of viewing
+- Single page design for ease of viewing, completely responsive design to operate fluidly across multiple browsers and the majority of devices on the market, mobile or desktop.
+
 - Sticky top navbar to ensure user always has a constant, easy to find, navigation toolbar/navbar for navigating the different content sections    quicker.   
   - Further on navigation, an abstract approach: "The user should not have to guess or question what roads they can see and navigate, it should be clear and labeled effectively to eliminate any doubt whatsoever" - Dallas Pataska :) 
+
 - Effective use of color scheming and correct contrast selections to draw attention to the important Call to Actions (Book now, see portfolio, etc).
+
 - Careful use of small implementations such as shadows and slight text color changes for additional SEO and design layout improvements (Polishing the fresh paint....)
+
 - Raw testimonial section currently hard-coded (**Good potential for additions here, such as upload form for reviews for former clients to access**)
+
 - Portfolio/Gallery for prior work (photo collection), this will be starting out as a simple grid layout with styling making things look better in the short term, but --> *** this is another area I am targeting to rapidly update post-deployment as I find the time ***
 
+- Contact form to schedule a meeting/gather more information about the photoshoot session services that are offered.  Currently a front end clickable prototype ONLY.  
+
 *** Upcoming goals ***
-- Image gallery containing prior work/images
-- Further design improvements as needed/realized
+- Backend contact form configuration  *** Next item ***
+- Improve portfolio gallery ( both styling and functionality )
+- Continue Further design improvements as needed/realized
   
 
 
