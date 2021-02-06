@@ -8,6 +8,7 @@ This project is a photography portfolio with a simple starting single page start
 
 *** Technologies/Ideas Incorporated ***
 - HTML
+- In-line CSS use, primarily chose to do this because it tends to be the most direct and effective method to overriding bootstraps default applied settings
 - CSS/JS via Bootstrap
 - Responsive Design heavily focused on combining desktop and mobile accessibility to lower the barrier to entry/viewing the website
 - Python/Django backend
