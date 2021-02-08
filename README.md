@@ -2,7 +2,7 @@
 
 *** Updated 02/06/21 ***
 
-*I am currently working towards a February 2021 deployment with updates periodically afterwards as I expand my capabilities as a developer.  I am always open to constructive criticism and to learning to concepts! 
+*I am currently working towards a February 2021 deployment with updates periodically afterwards as I expand my capabilities as a developer.  I am always open to constructive criticism and to learning new concepts! 
 
 This project is a photography portfolio with a simple starting single page starting concept with the opportunity to expand and built upon as a continuous side project to put my knowledge on display and practice my skills in a live environment.
 
