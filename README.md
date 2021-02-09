@@ -1,6 +1,6 @@
  ---------------- pixbyjade.com ----------------
 
-*** Updated 02/06/21 ***
+*** Updated 02/09/21 ***
 
 *I am currently working towards a February 2021 deployment with updates periodically afterwards as I expand my capabilities as a developer.  I am always open to constructive criticism and to learning new concepts! 
 
@@ -10,6 +10,7 @@ This project is a photography portfolio with a simple starting single page start
 - HTML
 - In-line CSS use, primarily chose to do this because it tends to be the most direct and effective method to overriding bootstraps default applied settings
 - CSS/JS via Bootstrap
+- Django forms for contact form (Looking into django-crispy-forms or similar others for better front end facing form design/styling)
 - Responsive Design heavily focused on combining desktop and mobile accessibility to lower the barrier to entry/viewing the website
 - Python/Django backend
 - Basic SEO implementations including use of Meta tags/description, header tags and favicon
@@ -30,13 +31,15 @@ This project is a photography portfolio with a simple starting single page start
 
 - Portfolio/Gallery for prior work (photo collection), this will be starting out as a simple grid layout with styling making things look better in the short term, but --> *** this is another area I am targeting to rapidly update post-deployment as I find the time ***
 
-- Contact form to schedule a meeting/gather more information about the photoshoot session services that are offered.  Currently a front end clickable prototype ONLY.  
+- Working contact form to start the business process of managing a client.  Due to low expected traffic many processes will be manually completed between the client and photographer.  
 
 *** Upcoming goals ***
-- Backend contact form configuration  *** Next item ***
+- Backend contact form configuration, update validations and styling to "clean up" the work surrounding the contact form in order to move on  *** Initial configuration complete, working contact form ***
 - Improve portfolio gallery ( both styling and functionality )
 - Continue Further design improvements as needed/realized
   
+
+
 
 
 All images supplied by pexels.com or supplied by the owner (thank you Jade!)
