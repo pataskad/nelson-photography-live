@@ -1,11 +1,23 @@
 from django.shortcuts import render, redirect
-from django.http import HttpResponse, JsonResponse, HttpResponseRedirect
-from .models import *
-from django.core.mail import send_mail, BadHeaderError
-from django.shortcuts import redirect
+from django.core.mail import send_mail
+from django.conf import settings
+from portfolio.forms import contactForm
+
 
 def index(request):
-   
-    return render(request, 'index.html')
+    if request.method == 'GET':
+        form_class = contactForm
+        form = form_class(None)
+        return render(request, 'index.html',  {'form':form})
+    if request.method == 'POST':
+        form=contactForm(request.POST)
+        if form.is_valid():
+            email=form.cleaned_data['email']
+            name=form.cleaned_data['name']
+            message=form.cleaned_data['message']
 
+            send_mail(name, message, email, ['nelsonj@pixbyjade.com'], fail_silently=False)
+        else:
+            form = contactForm()
+    return render(request, 'index.html', {'form':form})
 
