@@ -139,24 +139,20 @@
       <i><h2 style="margin-bottom: 30px; margin-top: 15px; color: #3F3F3F;">Interested? Fill out the form below for more info!</h2></i>
     </div>
 
-    <div class="container-fluid" style="text-align: center; padding-bottom: 40px; padding-top: 30px; padding-right: 0px; padding-left: 0px;">
-      <form class="needs-validation" style="text-align: -webkit-center; line-height: 1.5;" method="POST" novalidate>
+    <div class="container-fluid" style="text-align: center; padding-top: 30px; padding-right: 0px; padding-left: 0px;">
+      <form style="display: inline-grid; text-align: -webkit-center; line-height: 1.5;" method="POST" required>
         {% csrf_token %}
-        <div class="form-group">
-          <div class="col-md-4 mb-3" style="display: inline-grid;">
-            {{form}}
-          </div>
-        <div class="form-group" style="width: 75%;">
+        {{form}}
+        <div class="form-group" style="width: 75%; display: inline-grid; margin-top: 10px;">
           <div class="form-check">
             <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-            <label class="form-check-label" for="invalidCheck" style="font-size: 11px;">
-              I understand and acknowledge that it may take 24-48 hours to receive a response to my message
+            <label class="form-check-label" style="padding-bottom: 10px;" for="invalidCheck" style="font-size: 10px;">
+              I acknowledge that it may take 24-48 hours to receive a response to my message
             </label>
             <div class="invalid-feedback">
               You must agree before submitting.
             </div>
           </div>
-        </div>
         <input type="submit" class="btn btn-primary" value="Send"/>
       </form>
     </div>
