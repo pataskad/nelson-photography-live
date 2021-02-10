@@ -7,7 +7,7 @@
 This project is a photography portfolio with a simple starting single page starting concept with the opportunity to expand and built upon as a continuous side project to put my knowledge on display and practice my skills in a live environment.
 
 *** Technologies/Ideas Incorporated ***
-- HTML
+- HTML5/CSS3/Javscript
 - In-line CSS use, primarily chose to do this because it tends to be the most direct and effective method to overriding bootstraps default applied settings
 - CSS/JS via Bootstrap
 - Django forms for contact form (Looking into django-crispy-forms or similar others for better front end facing form design/styling)
