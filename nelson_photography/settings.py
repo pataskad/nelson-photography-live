@@ -121,8 +121,8 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'demisedj@gmail.com'
-EMAIL_HOST_PASSWORD = 'Football5'
+EMAIL_HOST_USER = 'pixbyjadecontact@gmail.com'
+EMAIL_HOST_PASSWORD = 'fYvGK@38^4gJSKa6'
 EMAIL_PORT = 465
 EMAIL_USE_SSL = True
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
