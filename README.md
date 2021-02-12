@@ -4,7 +4,7 @@
 
 *I am currently working towards a February 2021 deployment with updates periodically afterwards as I expand my capabilities as a developer.  I am always open to constructive criticism and to learning new concepts and approaches! 
 
-This project is a photography portfolio with a simple starting single page starting concept with the opportunity to expand and built upon as a continuous side project to put my knowledge on display and practice my skills in a live environment.
+Pix by Jade is a photography portfolio website meant to serve as a continuous learning platform for myself while also being a live environment for the client to actually use.  This project will emulate a real working environment and accompanying paperwork to better prepare for working within the industry, alone or as an integrated member of a team, but this project is solely put together by myself, Dallas Pataska, credits will be updated immediately if this changes.  
 
 *** Technologies/Ideas Incorporated ***
 - HTML5/CSS3/Javscript
