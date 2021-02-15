@@ -11,6 +11,105 @@
     <title>Pix by Jade</title>
     <link rel="icon" type="image/jpg" href="{% static 'img/primary.jpg' %}"/>
   </head>
+  <style>
+    body {
+      font-family: Arial;
+      margin: 0;
+    }
+    
+    * {
+      box-sizing: border-box;
+    }
+    
+    img {
+      vertical-align: middle;
+    }
+    
+    /* Position the image container (needed to position the left and right arrows) */
+    .container {
+      position: relative;
+    }
+    
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+    
+    /* Add a pointer when hovering over the thumbnail images */
+    .cursor {
+      cursor: pointer;
+    }
+    
+    /* Next & previous buttons */
+    .prev,
+    .next {
+      display: flex;
+      cursor: pointer;
+      position: absolute;
+      top: 40%;
+      width: auto;
+      margin-right: 16px;
+      padding: 16px;
+      margin-top: -50px;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+    
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+    
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+    
+    /* Container for image text */
+    .caption-container {
+      text-align: center;
+      background-color: #222;
+      padding: 2px 16px;
+      color: white;
+    }
+    
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* Six columns side by side */
+    .column {
+      float: left;
+      width: 16.66%;
+    }
+    
+    /* Add a transparency effect for thumnbail images */
+    .demo {
+      opacity: 0.6;
+    }
+    
+    .active,
+    .demo:hover {
+      opacity: 1;
+    }
+    </style>
   <body style="text-align: center; line-height: 1.25; background-image: linear-gradient(to right, #F5F9FC, #EFF2F4);">
 
     <!--NAVIGATION BAR, NAV LINKS AND COMPANY LOGO/TITLE-->
@@ -104,31 +203,65 @@
 
     <!--Portfolio WORK COLLECTION-->
     <div id="portfolio" class="container-fluid" id="portfolio" style="padding: 0px; background-image: linear-gradient(to right, rgb(231, 231, 238), #d9d8da); padding-top: 50px;">
-      <i><h2 style="margin-bottom: 45px; margin-top: 15px; color: #3F3F3F;">Portfolio | Past Work</h2></i>
+      <i><h2 style="margin-bottom: 45px; margin-top: 15px; color: #3F3F3F;">Portfolio | Photo Collection</h2></i>
     </div>
 
-    <div class="container-fluid shadow-lg" style="width: 100%; padding-top: 40px; padding-bottom: 40px; background-color: #3F3F3F; border-bottom-style: solid; border-top-style: solid; border-bottom-width: 3px;">
-      <div class="row" style="margin-bottom: 15px; margin-top: 15px;">
-        <div class="col-sm" style="padding: 0px; margin-bottom: 5px;">
-          <img style="padding: 5px;" class="rounded shadow-lg img-fluid" src="{% static 'img/portfolio-1.jpg' %}" alt="Deer">
-        </div>
-        <div class="col-sm" style="padding: 0px; margin-bottom: 5px;">
-          <img style="padding: 5px;" class="rounded shadow-lg img-fluid" src="{% static 'img/portfolio-2.jpg' %}" alt="Fire">
-        </div>
-        <div class="col-sm" style="padding: 0px; margin-bottom: 5px;">
-          <img style="padding: 5px;" class="rounded shadow-lg img-fluid" src="{% static 'img/portfolio-3.jpg' %}" alt="Deer-2">
-        </div>
+    <div class="container shadow-lg" style="max-width: fit-content; padding-top: 40px; padding-bottom: 40px; background-color: #3F3F3F; border-bottom-style: solid; border-top-style: solid; border-bottom-width: 3px;">
+      <div class="mySlides">
+        <div class="numbertext">1 / 6</div>
+        <img src="{% static 'img/portfolio-1.jpg' %}" style="width:100%">
       </div>
-      <i><h2 style="margin-top: 20px; margin-bottom: 40px; color: ghostwhite;">Any environment, any backdrop</h2></i>
-      <div class="row" style="margin-bottom: 15px;">
-        <div class="col-sm" style="padding: 0px; margin-bottom: 5px;">
-          <img style="padding: 5px;" class="rounded shadow-lg img-fluid" src="{% static 'img/portfolio-4.jpg' %}" alt="Deer">
+    
+      <div class="mySlides">
+        <div class="numbertext">2 / 6</div>
+        <img src="{% static 'img/portfolio-2.jpg' %}" style="width:100%">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">3 / 6</div>
+        <img src="{% static 'img/portfolio-3.jpg' %}" style="width:100%">
+      </div>
+        
+      <div class="mySlides">
+        <div class="numbertext">4 / 6</div>
+        <img src="{% static 'img/portfolio-4.jpg' %}" style="width:100%">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">5 / 6</div>
+        <img src="{% static 'img/portfolio-5.jpg' %}" style="width:100%">
+      </div>
+        
+      <div class="mySlides">
+        <div class="numbertext">6 / 6</div>
+        <img src="{% static 'img/portfolio-6.jpg' %}" style="width:100%">
+      </div>
+        
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+    
+      <div class="row" style="display: inline;">
+        <div class="column">
+          <img class="demo cursor" src="{% static 'img/portfolio-1.jpg' %}" style="width:100%" onclick="currentSlide(1)" alt="Oh Deer!">
         </div>
-        <div class="col-sm" style="padding: 0px; margin-bottom: 5px;">
-          <img style="padding: 5px;" class="rounded shadow-lg img-fluid" src="{% static 'img/portfolio-6.jpg' %}" alt="Fire">
+        <div class="column">
+          <img class="demo cursor" src="{% static 'img/portfolio-2.jpg' %}" style="width:100%" onclick="currentSlide(2)" alt="Warm Crackling of the hearth">
         </div>
-        <div class="col-sm" style="padding: 0px; margin-bottom: 5px;">
-          <img style="padding: 5px;" class="rounded shadow-lg img-fluid" src="{% static 'img/portfolio-5.jpg' %}" alt="Deer-2">
+        <div class="column">
+          <img class="demo cursor" src="{% static 'img/portfolio-3.jpg' %}" style="width:100%" onclick="currentSlide(3)" alt="Oh Deer! 2">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="{% static 'img/portfolio-4.jpg' %}" style="width:100%" onclick="currentSlide(4)" alt="What are these?">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="{% static 'img/portfolio-5.jpg' %}" style="width:100%" onclick="currentSlide(5)" alt="Minneapolis, MN">
+        </div>    
+        <div class="column">
+          <img class="demo cursor" src="{% static 'img/portfolio-6.jpg' %}" style="width:100%" onclick="currentSlide(6)" alt="USA">
         </div>
       </div>
     </div>
@@ -178,24 +311,34 @@
     <!--SCRIPTS-->
 
     <script>
-      // Below was pulled from bootstrap documentation to aid in setting up form validation
-      (function() {
-        'use strict';
-        window.addEventListener('load', function() {
-          // Fetch all the forms we want to apply custom Bootstrap validation styles to
-          var forms = document.getElementsByClassName('needs-validation');
-          // Loop over them and prevent submission
-          var validation = Array.prototype.filter.call(forms, function(form) {
-            form.addEventListener('submit', function(event) {
-              if (form.checkValidity() === false) {
-                event.preventDefault();
-                event.stopPropagation();
-              }
-              form.classList.add('was-validated');
-            }, false);
-          });
-        }, false);
-      })();
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+      }
       </script>
 
   </body>
