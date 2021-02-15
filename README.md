@@ -1,6 +1,6 @@
  ---------------- pixbyjade.com ----------------
 
-*** Updated 02/12/21 ***
+*** Updated 02/15/21 ***
 
 *I am currently working towards a February 2021 deployment with updates periodically afterwards as I expand my capabilities as a developer.  I am always open to constructive criticism and to learning new concepts and approaches! 
 
@@ -27,15 +27,14 @@ Pix by Jade is a photography portfolio website meant to serve as a continuous le
 
 - Careful use of small implementations such as shadows and slight text color changes, or proper complimentary color branding for additional SEO, brand and design layout improvements (Polishing the fresh paint....)
 
-- Raw testimonial section currently hard-coded
+- Testimonial section currently hard-coded --> *** May create an upload/submission form for custom reviews and automated upload process that will loop through each review ***
 
-- Portfolio/Gallery for prior work (photo collection), this will be starting out as a simple grid layout with styling making things look better in the short term, but --> *** Key area of interest here, looking to add in some javascript to create a better user experience viewing the gallery ***
+- Portfolio gallery using Javascript to loop through the photo collection smoothly on desktop and mobile devices as well as cross-browser support.
 
 - Working contact form to start the business process of managing a client.  Due to low expected traffic many processes will be manually completed between the client and photographer.  
 
 *** Upcoming goals ***
 - Backend contact form configuration, update validations and styling to "clean up" the work surrounding the contact form in order to move on  *** Baseline config complete, moving to validations before spicing up styling / functionality ***
-- Improve portfolio gallery ( both styling and functionality )
 - Continue Further design improvements as needed/realized
   
 - Apply SSL certificate to ensure customers that the brand is taking security serious, as well as add to the brands credibility
