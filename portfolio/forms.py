@@ -2,6 +2,6 @@ from django import forms
 
 
 class contactForm(forms.Form):
-    email=forms.EmailField(required=True)
-    name=forms.CharField(max_length=100, required=True)
-    message=forms.CharField(widget=forms.Textarea, required=True)
+    name = forms.CharField(label='name', max_length=100)
+    message = forms.CharField(label='message', widget=forms.Textarea)
+    sender = forms.EmailField()
