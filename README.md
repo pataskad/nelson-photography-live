@@ -35,6 +35,7 @@ Pix by Jade is a photography portfolio website meant to serve as a continuous le
 
 *** Upcoming goals ***
 - Backend contact form configuration, update validations and styling to "clean up" the work surrounding the contact form in order to move on  *** Baseline config complete, moving to validations before spicing up styling / functionality ***
+- django-crispy-forms
 - Continue Further design improvements as needed/realized
   
 - Apply SSL certificate to ensure customers that the brand is taking security serious, as well as add to the brands credibility

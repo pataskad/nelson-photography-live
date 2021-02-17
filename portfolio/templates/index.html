@@ -273,16 +273,16 @@
     </div>
 
     <div class="container-fluid" style="text-align: center; padding-top: 30px; padding-right: 0px; padding-left: 0px;">
-      <form style="display: inline-grid; text-align: -webkit-center; line-height: 1.5;" action="/thanks" method="POST" required>
-        {% csrf_token %}
+      {% if messages %}
+          <ul class="messages">
+              {% for message in messages %}
+              <li {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+              {% endfor %}
+          </ul>
+      {% endif %}
+      <form method="POST" style="display: inline-grid; text-align: -webkit-center; line-height: 1.5;" action="/thanks" id="contactForm" >
+      {% csrf_token %}
         {{ form }}
-        {% if messages %}
-        <ul class="messages">
-            {% for message in messages %}
-            <li {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
-            {% endfor %}
-        </ul>
-        {% endif %}
         <input type="submit" class="btn btn-primary" value="Send"/>
       </form>
     </div>
