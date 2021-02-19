@@ -13,7 +13,7 @@
   </head>
   <style>
     body {
-      font-family: Arial;
+      font-family: -webkit-body;
       margin: 0;
     }
     
@@ -24,7 +24,12 @@
     img {
       vertical-align: middle;
     }
-    
+    label {
+      font-size: 20px;
+    }
+    li {
+      padding-right: 5px;
+    }
     /* Position the image container (needed to position the left and right arrows) */
     .container {
       position: relative;
@@ -109,8 +114,33 @@
     .demo:hover {
       opacity: 1;
     }
+    #form-container {
+      text-align: -webkit-center; 
+      padding-top: 30px; 
+      padding-right: 0px; 
+      padding-left: 0px; 
+      padding-bottom: 40px;
+    }
+    .form-control {
+      text-align: -webkit-center;
+    }
+    .card-img-top {
+      height: 280px;
+    }
     </style>
+
+
   <body style="text-align: center; line-height: 1.25; background-image: linear-gradient(to right, #F5F9FC, #EFF2F4);">
+
+    <!--additional portal to social links-->
+
+    <nav class="navbar" style="height: 55px; padding: .25rem .5rem; background-color: #5c5c5c;">
+      <ul style="list-style: none; display: -webkit-inline-box; padding-inline-start: 0px; padding-bottom: 5px;">
+        <li><a href="https://www.instagram.com/pix_by_jade/"><img src="https://img.icons8.com/color/48/000000/instagram-new--v1.png"/></a></li>
+        <li><a href="https://twitter.com/PixbyJade"><img src="https://img.icons8.com/color/48/000000/twitter-squared.png"/></a></li>
+        <li><a href="mailto:nelsonj@pixbyjade.com"><img src="https://img.icons8.com/fluent/48/000000/gmail--v1.png"/></a></li>
+      </ul>
+    </nav>
 
     <!--NAVIGATION BAR, NAV LINKS AND COMPANY LOGO/TITLE-->
     <nav class="navbar navbar-expand-xl" style="height: 150px; justify-content: center; background-color: #3F3F3F;">  <!--large height used to compensate for mobile responsiveness-->
@@ -127,14 +157,19 @@
       <a  class="flex-sm-fill text-sm-center nav-link"  style="color: ghostwhite;" href="#book_session">Contact Me</a>
     </nav>
 
+    <!--Alert banner for successful contact form submission-->
+    {% if name %}
+    <div class="alert alert-success" style="margin-bottom: 0;" role="alert">
+      Message received, thank you! I will be in contact shortly!
+    </div>
+    {% endif %}
+
 
 
     <!--BEGIN CONTENT-->
-    <div id="primary" class="text-center">
-      <div class="centered"></div>
-    </div>
 
     <!--SERVICES AND AGENT CAPABILITIES-->
+
     <div id="services" class="container-fluid"style="background-image: linear-gradient(to right, rgb(231, 231, 238), #d9d8da); padding-top: 50px;">
       <i><h2 style="margin-bottom: 30px; color: #3F3F3F;">What I Do</h2></i>
 
@@ -148,7 +183,7 @@
             </div> 
         </div>  
         <div class="card shadow-sm p-3 mb-5 rounded" style="background:rgba(236, 236, 236, 0.685);">
-          <img class="card-img-top" src="{% static 'img/pexels-caio-56759.jpg' %}" alt="Card image cap">
+          <img class="card-img-top" src="{% static 'img/pexels-pixabay-248519.jpg' %}" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Photo Editing</h5>
             <p class="card-text" style="text-align: left;">Looking for a small change or like a specific filter?  Not to worry as I can provide you with a range of options that can add the extra touch you might be looking for to really make that picture have a lasting impact.</p>
@@ -159,7 +194,7 @@
           <img class="card-img-top" src="{% static 'img/pexels-vitaly-vlasov-1655817.jpg' %}" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Professional Equipment</h5>
-            <p class="card-text" style="text-align: left;">In order to guarantee the best pictures for you and yours, I utilize professional camera equipment and editing software to ensure your photos receive optimal care and satisfaction.</p>
+            <p class="card-text" style="text-align: left;">In order to guarantee the best pictures for you and yours, I utilize professional camera equipment and editing software to ensure your photos receive optimal care for your satisfaction.</p>
             <a href="#reviews"><button class="btn btn-outline-primary" type="button">See Past Reviews</button></a>
           </div>
         </div>
@@ -202,6 +237,7 @@
     </div>
 
     <!--Portfolio WORK COLLECTION-->
+
     <div id="portfolio" class="container-fluid" id="portfolio" style="padding: 0px; background-image: linear-gradient(to right, rgb(231, 231, 238), #d9d8da); padding-top: 50px;">
       <i><h2 style="margin-bottom: 45px; margin-top: 15px; color: #3F3F3F;">Portfolio | Photo Collection</h2></i>
     </div>
@@ -268,11 +304,12 @@
       
 
     <!--GET IN CONTACT WITH ME ---- BOOK A SESSION-->
+
     <div id="book_session" class="container-fluid" id="portfolio" style="padding-top: 50px;">
       <i><h2 style="margin-bottom: 30px; margin-top: 15px; color: #3F3F3F;">Interested? Fill out the form below for more info!</h2></i>
     </div>
 
-    <div class="container-fluid" style="text-align: center; padding-top: 30px; padding-right: 0px; padding-left: 0px;">
+    <div class="container-fluid" id="form-container">
       {% if messages %}
           <ul class="messages">
               {% for message in messages %}
@@ -280,16 +317,30 @@
               {% endfor %}
           </ul>
       {% endif %}
-      <form method="POST" style="display: inline-grid; text-align: -webkit-center; line-height: 1.5;" action="/thanks" id="contactForm" >
-      {% csrf_token %}
-        {{ form }}
-        <input type="submit" class="btn btn-primary" value="Send"/>
+      <form method="POST" action="{% url 'thanks' %}" style="line-height: 1.5; width: 75%;">
+        {% csrf_token %}
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input name="name" type="text" class="form-control" placeholder="Enter your name...">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input name="email" type="text" class="form-control" placeholder="Enter your email...">
+          <small class="form-text text-muted">Your email will remain completely confidential and not be sent to ANY 3rd parties.</small>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea name="message" class="form-control" rows="4"></textarea>
+          <small class="form-text text-muted">Please explain what you are looking for with as much detail as you can.</small>
+        </div>
+        <input type="submit" class="btn btn-primary" value="Send Message Now">
       </form>
     </div>
     
 
     <!--FOOTER, CONTACT, CREATOR AND ACCREDITION LINKS-->
-      <footer class="text-center" style=" padding-right: 0px; padding-left: 0px; background-image: linear-gradient(to right, rgb(231, 231, 238), #d9d8da);">
+
+      <footer class="text-center" style="height: 100%; padding-right: 0px; padding-left: 0px; background-image: linear-gradient(to right, rgb(231, 231, 238), #d9d8da);">
         <h3 style="margin-bottom: 15px; padding-top: 40px; color: #3F3F3F;">Find me elsewhere!</h3>
         <address style="color: #3F3F3F; margin: 0px;">
           105 Fillmore St W, Preston, MN 55965
@@ -305,6 +356,7 @@
         <br><a href="https://icons8.com/icons/set/popular" style="font-size: 12px;">All icons provided by Icons8</a>
         <p style="color: #3F3F3F; font-size: 12px;">Created by - Dallas Pataska - <a href="https://www.linkedin.com/in/dallas-pataska/">LinkedIn</a></p>
       </footer>
+
     <!--SCRIPTS-->
 
     <script>
