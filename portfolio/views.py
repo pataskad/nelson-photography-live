@@ -12,9 +12,15 @@ def index(request):
 def thanks(request):
     if request.method == 'POST':
         name = request.POST['name']
-        email = request.POST['email']
+        from_email = request.POST['email']
         message = request.POST['message']
 
+        send_mail(
+            name,
+            from_email + message,
+            from_email,
+            ['nelsonj@pixbyjade.com'],
+        )
         return render(request, 'index.html', {'name': name})
     else:
         return render(request, 'index.html')
