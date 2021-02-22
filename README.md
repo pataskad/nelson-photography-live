@@ -2,7 +2,7 @@
 
 *** Updated 02/22/21 ***
 
-*I am currently working towards a February 26th, 2021 deployment with updates periodically afterwards as I expand my capabilities as a developer.  I am always open to constructive criticism and to learning new concepts and approaches! 
+*I am currently working towards a February 28th, 2021 deployment with updates periodically afterwards as I expand my capabilities as a developer.  I am always open to constructive criticism and to learning new concepts and approaches! 
 
 Pix by Jade is a photography portfolio website meant to serve as a continuous learning platform for myself while also being a live environment for the client to actually use.  This project will emulate a real working environment and accompanying paperwork to better prepare for working within the industry, alone or as an integrated member of a team, but this project is solely put together by myself, Dallas Pataska, credits will be updated immediately if this changes.  
 
