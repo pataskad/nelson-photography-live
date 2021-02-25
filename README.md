@@ -1,18 +1,18 @@
  ---------------- pixbyjade.com ----------------
 
-*** Updated 02/22/21 ***
+*** Updated 02/25/21 ***
 
 *I am currently working towards a February 28th, 2021 deployment with updates periodically afterwards as I expand my capabilities as a developer.  I am always open to constructive criticism and to learning new concepts and approaches! 
 
 Pix by Jade is a photography portfolio website meant to serve as a continuous learning platform for myself while also being a live environment for the client to actually use.  This project will emulate a real working environment and accompanying paperwork to better prepare for working within the industry, alone or as an integrated member of a team, but this project is solely put together by myself, Dallas Pataska, credits will be updated immediately if this changes.  
 
 *** Technologies/Ideas Incorporated ***
-- HTML5/CSS3/Javscript
+- HTML5/CSS3/Javascript
 - In-line CSS use, primarily chose to do this because it tends to be the most direct and effective method to overriding bootstraps default applied settings
 - CSS/JS via Bootstrap
-- Django forms for contact form, currently via send_mail() - (Looking into django-crispy-forms or similar others for better front end facing form design/styling)
+- Django forms for contact form, currently via send_mail() - (Utilizing Bootstrap for front end viewing)
 - Responsive Design heavily focused on combining desktop and mobile accessibility to lower the barrier to entry/viewing the website
-- Python/Django backend
+- Python/Django backend configuration language and framework
 - Basic SEO implementations including use of Meta tags/description, header tags and favicon
   - Likely to go further later on in the project lifecycle (Such as blog updates, etc)
 
@@ -28,21 +28,19 @@ Pix by Jade is a photography portfolio website meant to serve as a continuous le
 
 - Testimonial section currently hard-coded --> *** May create a private admin upload/submission form for custom reviews and automated upload process that will loop through each review ***
 
-- Portfolio gallery using Javascript to loop through the photo collection smoothly on desktop and mobile devices as well as cross-browser support.
+- Portfolio gallery using Javascript to loop through the photo collection smoothly on desktop and mobile devices as well as cross-browser support, currently (02/25/21) using pexels.com supplied images for high resolution until client supplies new images. 
 
-- Functioning front and backend contact form with messages being sent to a company email inbox 
+- Functioning front and backend contact form with messages being sent to a website domain email inbox 
 
 *** Upcoming goals ***
 - Deploy backend email settings via AWS?
-
-- Refactor/redesign photo gallery layout
 
 - Continue Further design improvements as needed/realized
 
 - Refactor all HTML/CSS/JS where possible, add additional comments/documentation if necessary
 
 - Deploy project via AWS - *** Deploy date 02/28/21 ***
-- Apply SSL certificate at time of deployment to ensure customers that the brand is taking security serious, as well as add to the brands credibility
+- Apply SSL certificate at time of deployment to ensure customers that the brand is taking security serious, as well as add to the brands credibility (Certbox)
 
 
 

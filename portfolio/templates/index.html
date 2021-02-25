@@ -101,6 +101,9 @@
     .card-body {
       text-align: -webkit-center;
     }
+    .card-deck {
+      text-align: -webkit-center;
+    }
     * {box-sizing:border-box}
     .slideshow-container {
       position: relative;
@@ -304,31 +307,39 @@
 
     <!--Portfolio WORK COLLECTION-->
 
-    <div id="portfolio" class="container-fluid" id="portfolio" style="padding: 0px; background-image: linear-gradient(to right, rgb(231, 231, 238), #d9d8da); padding-top: 50px;">
+    <div id="portfolio" class="container-fluid" id="portfolio" style="padding: 0px; background-image: linear-gradient(to right, rgb(231, 231, 238), #d9d8da); padding-top: 35px;">
       <i><h2>Portfolio | Photo Collection</h2></i>
     </div>
 
     <div class="container shadow-lg" style="max-width: 100%; padding-top: 40px; padding-bottom: 40px; background-color: #3F3F3F; border-bottom-style: solid; border-top-style: solid; border-bottom-width: 3px;">
 
       <div class="slideshow-container">
-
+        <!-- Current images pulled from pexels.com due to client not supplying high-quality images. Planned to be replaced as soon as new images are received.-->
         <!-- Full-width images with number and caption text -->
         <div class="mySlides">
-          <div class="numbertext">1 / 3</div>
-          <img src="{% static 'img/portfolio-1.jpg' %}" style="width:100%">
-          <div class="text">Caption Text</div>
+          <div class="numbertext">1 / 5</div>
+          <img src="{% static 'img/pexels-amanda-klamrowski-1423827.jpg' %}" style="width:100%">
+          <!--USE ADDITIONAL DIV TO NOTE DATE TAKEN?-->
         </div>
       
         <div class="mySlides">
-          <div class="numbertext">2 / 3</div>
-          <img src="{% static 'img/portfolio-2.jpg' %}" style="width:100%">
-          <div class="text">Caption Two</div>
+          <div class="numbertext">2 / 5</div>
+          <img src="{% static 'img/pexels-pixabay-208698.jpg' %}" style="width:100%">
         </div>
       
         <div class="mySlides">
-          <div class="numbertext">3 / 3</div>
-          <img src="{% static 'img/portfolio-3.jpg' %}" style="width:100%">
-          <div class="text">Caption Three</div>
+          <div class="numbertext">3 / 5</div>
+          <img src="{% static 'img/pexels-robert-hrovat-4203037.jpg' %}" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">4 / 5</div>
+          <img src="{% static 'img/portfolio-6.jpg' %}" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">5 / 5</div>
+          <img src="{% static 'img/pexels-blue-ox-studio-1857631.jpg' %}" style="width:100%">
         </div>
       
         <!-- Next and previous buttons -->
@@ -342,6 +353,8 @@
         <span class="dot" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
       </div>
     </div>
     <!--GET IN CONTACT WITH ME ---- BOOK A SESSION-->
@@ -395,6 +408,7 @@
       </footer>
       <footer class="text-center" style="background-image: linear-gradient(to right,  rgb(231, 231, 238), #d9d8da);">
         <br><a href="https://icons8.com/icons/set/popular" style="font-size: 12px;">All icons provided by Icons8</a>
+        <p style="color: #3F3F3F; font-size: 12px; margin-bottom: 0px;"><i>Some</i> images from - <a href="https://www.pexels.com">Pexels.com</a></p>
         <p style="color: #3F3F3F; font-size: 12px;">Created by - Dallas Pataska - <a href="https://www.linkedin.com/in/dallas-pataska/">LinkedIn</a></p>
       </footer>
 
