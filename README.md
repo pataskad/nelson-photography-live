@@ -1,6 +1,8 @@
  ---------------- pixbyjade.com ----------------
 
-*** Updated 02/25/21 ***
+*** Updated 03/05/21 ***
+
+*** Deployed 03/05/21 ***
 
 *I am currently working towards a February 28th, 2021 deployment with updates periodically afterwards as I expand my capabilities as a developer.  I am always open to constructive criticism and to learning new concepts and approaches! 
 
@@ -17,7 +19,7 @@ Pix by Jade is a photography portfolio website meant to serve as a continuous le
   - Likely to go further later on in the project lifecycle (Such as blog updates, etc)
 
 
-*** Features Implemented ***
+*** Features Implemented \ Overview of pixbyjade ***
 - Single page design for ease of viewing, completely responsive design to operate fluidly across multiple browsers and the majority of devices on the market, mobile or desktop.
 
 - Sticky top navbar to ensure user always has a constant, easy to find, navigation toolbar/navbar for navigating the different content sections    quicker.   
@@ -32,15 +34,17 @@ Pix by Jade is a photography portfolio website meant to serve as a continuous le
 
 - Functioning front and backend contact form with messages being sent to a website domain email inbox 
 
+- Deployed project via AWS using NGINX web server and Gunicorn
+- Applied SSL certificate utilizing the Certbox service
+
+
 *** Upcoming goals ***
-- Deploy backend email settings via AWS?
 
 - Continue Further design improvements as needed/realized
 
-- Refactor all HTML/CSS/JS where possible, add additional comments/documentation if necessary
+- Refactor all HTML/CSS/JS where possible, add additional comments/documentation where necessary
 
-- Deploy project via AWS - *** Deploy date 02/28/21 ***
-- Apply SSL certificate at time of deployment to ensure customers that the brand is taking security serious, as well as add to the brands credibility (Certbox)
+
 
 
 
